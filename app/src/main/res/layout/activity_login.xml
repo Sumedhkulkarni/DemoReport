@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login"
+    android:background="@drawable/img1">
+
+    <Toolbar
+        android:id="@+id/tlb"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/logo_background">
+
+    </Toolbar>
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="160dp"
+        android:layout_height="71dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ebtlogo1"/>
+
+    <EditText
+        android:id="@+id/eid"
+        android:layout_width="370dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="200dp"
+        android:textColor="#fff"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/store_button"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:paddingLeft="10dp"
+        android:hint="Email Id"
+        android:drawablePadding="10dp"
+        android:fontFamily="serif"
+        android:textSize="20dp"
+        android:textColorHint="#BDBDBD"
+        android:drawableLeft="@drawable/ic_person_white_24dp"/>
+
+    <EditText
+        android:id="@+id/pwd"
+        android:layout_width="370dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="300dp"
+        android:textColor="#fff"
+        android:inputType="textPassword"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:paddingLeft="10dp"
+        android:hint="Password"
+        android:background="@drawable/store_button"
+        android:drawablePadding="10dp"
+        android:fontFamily="serif"
+        android:textSize="20dp"
+        android:textColorHint="#BDBDBD"
+        android:drawableLeft="@drawable/ic_lock_white_24dp"/>
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/store_button"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:text="LogIn"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="#fff"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:fontFamily="serif"/>
+
+</RelativeLayout>

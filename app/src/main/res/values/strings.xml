@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Demo Report</string>
+    <string name="idchar">[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+</string>
+</resources>
