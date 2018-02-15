@@ -9,7 +9,7 @@ import android.widget.ImageView;
 
 public class store extends AppCompatActivity {
 
-    ImageView iv;
+    ImageView iv, imr;
 
     Button b1, b2, b3;
     @Override
@@ -18,6 +18,7 @@ public class store extends AppCompatActivity {
         setContentView(R.layout.activity_store);
 
         iv = findViewById(R.id.img10);
+        imr = findViewById(R.id.iv_refresh);
 
         iv.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -25,7 +26,15 @@ public class store extends AppCompatActivity {
                 finish();
             }
         });
-
+        
+         imr.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Animation rotateAnimation = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.rotation);
+                imr.startAnimation(rotateAnimation);
+            }
+        });
+  
         b1 = findViewById(R.id.btn_barchart);
         b2 = findViewById(R.id.btn_storeLinechart);
         b3 = findViewById(R.id.btn_piechart);
