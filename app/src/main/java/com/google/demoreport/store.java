@@ -4,12 +4,14 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageView;
 
 public class store extends AppCompatActivity {
 
-    ImageView iv;
+    ImageView iv, imr;
 
     Button b1, b2, b3;
     @Override
@@ -18,11 +20,20 @@ public class store extends AppCompatActivity {
         setContentView(R.layout.activity_store);
 
         iv = findViewById(R.id.img10);
+        imr = findViewById(R.id.iv_refresh);
 
         iv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 finish();
+            }
+        });
+
+        imr.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Animation rotateAnimation = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.rotation);
+                imr.startAnimation(rotateAnimation);
             }
         });
 
