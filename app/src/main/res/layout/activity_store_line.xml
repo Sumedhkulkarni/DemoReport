@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Store_line"
+    tools:context=".store$Store_line"
     android:background="@drawable/img1">
 
     <Toolbar
@@ -29,5 +29,13 @@
         android:textSize="30dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="5dp"/>
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        android:id="@+id/linechart"
+        android:layout_centerHorizontal="true">
+    </com.github.mikephil.charting.charts.LineChart>
 
 </RelativeLayout>

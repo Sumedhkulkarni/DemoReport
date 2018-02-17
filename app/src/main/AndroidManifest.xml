@@ -20,17 +20,18 @@
         </activity>
         <activity android:name=".MainActivity" />
         <activity android:name=".store" />
+        <activity android:name=".store$Store_bar"/>
+        <activity android:name=".store$Store_line"/>
+        <activity android:name=".store$Store_pie"/>
         <activity android:name=".category" />
         <activity android:name=".staff" />
         <activity android:name=".time" />
         <activity android:name=".payment" />
         <activity android:name=".login" />
-        <activity android:name=".Store_bar" />
-        <activity android:name=".Store_line" />
-        <activity android:name=".Store_pie" />
         <activity android:name=".Category_bar" />
         <activity android:name=".Category_line" />
         <activity android:name=".Category_pie"></activity>
+
     </application>
 
 </manifest>

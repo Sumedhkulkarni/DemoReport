@@ -255,8 +255,7 @@
                         android:background="@drawable/ic_donut_large_white_24dp"
                         android:fontFamily="serif"
                         android:textAllCaps="false"
-                        android:textColor="#ffffff"
-                        android:textSize="20dp" />
+                        android:textColor="#ffffff" />
 
                     <TextView
                         android:layout_width="wrap_content"
